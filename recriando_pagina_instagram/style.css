@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+body {
+    width: 100%;/*largura*/
+    min-height: 100vh;/*altura minina*/
+    background-color: rgb(243,243,243);/*cor de fundo*/
+    margin: 0;/*margins*/
+    padding: 0;/*altura*/
+    display: flex;/*display: flex; é adicionado, os elementos ficam em linha, um do lado do outro.*/
+    justify-content: center;/*Alinha os itens ao início do container*/
+}
+.instagram-wrapper {/**telefone do instagran*/
+    display: flex; 
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150%;
+    height: 30px;
+}
+.instagram-phone1{display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150%;
+    height: 30px;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.instagram-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem, 0;
+    border: 1px solid lightslategray;
+    padding-left: 10px;
+    margin: 10px;
+    padding-top: 10px;
+}
+.instagram-logo {
+    height: 100px;
+    width: 20rem;
+    padding-top: 10px;
+}
+.profile-photo{/*foto do perfil do instagram*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 10px 10px 10x 10px;
+}
+.profile-photo { /*foto do perfil do instagram*/
+    padding-top: 20%;/*Define o espaço superior*/
+    padding-bottom: 2rem; /*Define o espço inferior */
+    width: 12rem;/*largura*/
+    height: 12rem;/*altura*/
+    padding-top: 20px;
+
+}
+.instagram-login{/*continue como Daniela?*/
+    background-color: #0095f6;
+    color: #000000;
+    padding: 8px;
+    border-radius: 4px;
+    justify-content: space-around;
+    
+}
+.instagram-logout{/*remover conta**/
+    color: 0095f6;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.not-account{/*Não é Daniela **/
+    color: rgb(218, 11, 11);
+    padding-left: 10px;
+}
+
+.link-blue{ /**alterar conta ou Inscreva-se*/
+    color: blue;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.get-the-app{
+    
+    text-align: center;
+
+}
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-download:nth-child(1){
+    background-image: url(img/appleStore.png);
+    border-radius: 4px;
+
+}
+.app-download:nth-child(2){
+    background-image: url(img/button\ googleplay.png);
+    border-radius: 4px;
+}
+/*Deixar responsivo significa deixar o layout do tamanho da tela que o usuario desejar*/
+/*como deixar responsivo tem @media(max-width: tamanho desejados**/
+@media(max-width: 1024px){
+    body{
+        background-color: #ffffff;
+    }
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagran-continue{
+        width: 100%;
+    }
+    .group{
+        border: 1px solid transparent;
+    }
+} 
+group:nth-child(1){
+    min-height: 19rem;
+
+}
+.instagram-logo {
+    height: 100px;
+    width: 20rem;
+}
+
+

@@ -1,0 +1,29 @@
+
+.body{
+    font:20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    background-color: deeppink;
+}
+.quemsomos{
+    background-color: violet;
+    color: black;
+
+}
+.margin{
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.parceiros{
+    background-color: deeppink;
+    color: black;
+}
+.Serviços{
+    background-color: violet;
+    color:black;
+}
+.bg-footer{
+    background-color: black;
+    color: white;
+}
