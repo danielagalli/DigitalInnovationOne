@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align_content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border:1px solid black;
+        }
+        .item{
+            background-color: orangered;
+            padding: 0 5px;/*preencher*/
+            margin: 5px;
+            flex:1;/**/
+            text-align: center;
+            color: white;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Align_content</h1>
+    <p>È a propriedade responsável por tratar o alinhamento das linhas
+    do container em relação ao eixo vertical do container.</p>
+    <ul><li>O container utilize quebra de linhas.</li></ul>
+    <ul><li>A altura do container seja maior que a soma das linhas dos itens.</li></ul>
+    
+    <h2>Tipos De Alinhamento</h2>
+
+    <h3>Stretch</h3>
+    <ul><li>É o padrão e os flex itens crescem igualmente</li></ul>
+
+    <section class="container stretch">
+    <div class="item">orem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+</section>
+
+
+<h3>Center</h3>
+<ul><li>Alinhamento dos itens ao centro.</li></ul>
+<section class="container center ">
+    <div class="item">orem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+</section>
+
+    <h3>Flex Start</h3>
+    <ul><li>Alinhamento dos itens no inicio.</li></ul>
+<section class="container flex-start ">
+    <div class="item">orem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+</section>
+
+    <h3>Flex-End</h3>
+    <ul><li>Alinhamento dos itens no final.</li></ul>
+    <section class="container flex-end">
+        <div class="item">orem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    </section>
+
+
+    <h3>Space-around</h3>
+    <ul><li>Os espaçamentos do meio são duas vezes maiores que o inicio e final,porém fica mais afastada da borda.</li></ul>
+    <section class="container space-around ">
+        <div class="item">orem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    </section>
+
+    <h3>Space-between</h3>
+    <ul><li>Cria um espaçamento igual entre os elementos, porém fica bem proxima a borda.</li></ul>
+    <section class="container space-between">
+        <div class="item">orem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+    </section>
+</body>
+</html>

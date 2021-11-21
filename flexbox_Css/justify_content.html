@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content</title>
+    <style>
+        .container{
+            max-width: 400px;
+           /*  height: 100px; */
+            border: 2px solid black;
+            margin: 0;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            text-align:center;
+            color: white;
+        }
+        .flex-start{
+            justify-content:flex-start ;
+        }
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .center{
+            justify-content: center;
+        }
+        .space-between{
+            justify-content: space-between;
+        }
+        .space-around{
+            justify-content: space-around;
+        }
+        .column{
+            flex-direction: column;
+            min-height: 300px;/*altura*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+
+    <h1>Flex Start</h1>
+    <p>Dentro de um espaço estabelicido flex-start posiciona o conteudo
+        do lado esquerdo da margem.</p>
+<section class="container flex-start">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</section> 
+
+<h1>Flex End</h1>
+    <p>Dentro de um espaço estabelicido flex-End posiciona o conteudo
+        do lado direito da margem.</p>
+<section class="container flex-end">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</section> 
+
+<h1> Center</h1>
+    <p>Dentro de um espaço estabelicido Center posiciona o conteudo
+        no centro da margem.</p>
+<section class="container center">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</section> 
+
+<h1>Space-betwen</h1>
+    <p>Dentro de um espaço estabelicido space-between  posiciona o conteudo
+        de forma distribuida em tamanhos iguais margem.</p>
+<section class="container space-between">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+</section> 
+
+<h1>Space-around</h1>
+    <p>Dentro de um espaço estabelicido space-around posiciona o conteudo
+        de forma distribuida em tamanhos iguais porém inicializa com espaço 
+        antes do primeiro numero e no ultimo numero deixa mais um espaço,
+        como mostrado no exemplo abaixo.</p>
+<section class="container space-around">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+</section> 
+
+<p>================COLUMN=======================================</p>
+<h1>Flex Start</h1>
+<section class="container flex-start column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</section> 
+
+<h1>Flex End</h1>
+<section class="container flex-end column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</section> 
+
+<h1> Center</h1>
+<section class="container center column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</section> 
+
+<h1>Space-betwen</h1>
+<section class="container space-between column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+</section> 
+
+<h1>Space-around</h1>
+<section class="container space-around column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+</section> 
+
+</body>
+</html>

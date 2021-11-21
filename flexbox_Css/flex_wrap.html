@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+    <style>
+     .flex-conteiner{
+        display: flex;
+      /*  height: 150px; */
+        border:2px solid black;
+        max-width: 310px;
+        flex-direction: column;
+     }   
+     .item{
+         font-size:24px;
+         height: 50%;
+         text-align: center;
+         min-width: 100px;
+         line-height: 50px;
+     }
+     .nowrap{
+         flex-wrap: nowrap;
+     }
+     .wrap{
+         flex-wrap: wrap;
+     }
+     .wrap-reverse{
+         flex-wrap: wrap-reverse;
+         height: 150px; 
+     }
+     .blue{
+         background-color: blue;
+     }
+     .green{
+         background-color: lightgreen;     }
+     .orange{
+         background-color: orangered;
+     }
+    </style>
+</head>
+<body>
+    <h1>Now Wrap </h1>
+   <b>O que é Now Wrap CSS?</b> 
+    <p>Dentro de um determinado campo usando o Now Wrap quando usado o min-width vai transbordar dentro 
+    do espaço desejado mas mesmo assim respeita a horizontalidade.</p>
+    <div class="flex-conteiner nowrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+    </div> 
+    <br></br><!-- PULA LINHA -->
+    <h1> Wrap </h1> 
+    <p>A propriedade CSS word-wrap é utilizada para especificar se o navegador
+        pode ou não quebrar linhas dentro das palavras, afim de prevenir o vazamento 
+        quando do contrário uma sequencia de caracteres é muito longa para caber na 
+        caixa que o contém, mesmo usando a função min-width.</p> 
+        <div class="flex-conteiner wrap">
+            <div class="item orange">1</div>
+            <div class="item green">2</div>
+            <div class="item blue">3</div>
+           
+        </div> 
+        <h1>Wrap Reverse</h1> 
+        <p>é o oposto do Wrap que tem tem os sequencia ordenadas(1,2,3) 
+          Wrap reverse tem uma sequencia porem de tras para na direção oposta(3,2,1).</p>
+          <div class="flex-conteiner wrap-reverse">
+            <div class="item orange">1</div>
+            <div class="item green">2</div>
+            <div class="item blue">3</div>         
+        </div> 
+        </body>
+</html>

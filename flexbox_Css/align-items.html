@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-items</title>
+    <style>
+        .container{
+            max-width:350px;/*altura maxima*/
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color:white;
+            text-align: center;
+            flex:1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+                align-items:stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseLine{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 500px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ALIGN-ITEMS</h1>
+    <p> Trata do alinhamento dos flex itens de acordo como o eixodo conteiner.</p>
+        <p>O alinhamento é diferente para quando os items estão em colunas ou linhas.</p>
+        <p>Permite o alinhamento centraç no eixo vertical.</p>
+
+            <h2>TIPOS DE ALINHAMENTO</h2>
+
+            <h3>Row</h3>
+
+            <h4>Center</h4>
+            <ul><li>Center: alinhamento dos itens ao centro</li></ul>
+        <section class="container center">
+            <div class="item">Lorem ipsum  </div>
+            <div class="item">Daniela Galli</div>
+            <div class="item">Alex Camelo</div>
+        </section>
+
+            <h4>Stretch</h4>
+        <ul><li>Strech: Padrão, e os flex items cresçam igualmente</li></ul>
+        <section class="container stretch">
+            <div class="item">Lorem ipsum  </div>
+            <div class="item">Lorem ipsumLorem ipsumLorem ipsum</div>
+            <div class="item">Alex Camelo s2s</div>
+        </section>
+
+        <h4>Flex-Start</h4>
+        <ul><li>flex-start:alinhamento dos items ao topo.</li></ul>
+        <section class="container flex-start">
+            <div class="item">Lorem ipsum  </div>
+            <div class="item">Lorem ipsumLorem ipsumLorem ipsum</div>
+            <div class="item">Alex Camelo s2s</div>
+        </section>
+
+        <h4>Flex-End</h4>
+        <ul><li>flex-end:alinhamento dos itens no final ou de baixo para cima com as escritas.</li></ul>
+        <section class="container flex-end">
+            <div class="item">Lorem ipsum  </div>
+            <div class="item">Lorem ipsumLorem ipsumLorem ipsum</div>
+            <div class="item">Alex Camelo s2s</div>
+        </section>
+     
+        <h4>BaseLine</h4>
+        <ul><li>Baseline: alinhamento de acordo com com a linha base de tipografia dos items.</li></ul>
+        <section class="container baseLine">
+            <div class="item">Lorem ipsum  </div>
+            <div class="item">Lorem ipsumLorem ipsumLorem ipsum</div>
+            <div class="item">Alex Camelo s2s</div>
+        </section>
+    
+        <h2>Column</h2>
+
+       <h4>Center</h4>
+            <ul><li>Center: alinhamento dos itens ao centro</li></ul>
+        <section class="container center column">
+            <div class="item">Lorem ipsum  </div>
+            <div class="item">Lorem ipsumLorem ipsumLorem ipsum</div>
+            <div class="item">Alex Camelo s2s</div>
+        </section>
+
+            <h4>Stretch</h4>
+        <ul><li>Strech: Padrão, e os flex items cresçam igualmente</li></ul>
+        <section class="container stretch column">
+            <div class="item">Lorem ipsum  </div>
+            <div class="item">Lorem ipsumLorem ipsumLorem ipsum</div>
+            <div class="item">Alex Camelo s2s</div>
+        </section>
+
+    <h4>Flex-Start</h4>
+    <ul><li>flex-start:alinhamento dos items ao topo.</li></ul>
+    <section class="container flex-start column">
+        <div class="item">Lorem ipsum  </div>
+            <div class="item">Lorem ipsumLorem ipsumLorem ipsum</div>
+            <div class="item">Alex Camelo s2s</div>
+    </section>
+
+    <h4>Flex-End</h4>
+        <ul><li>flex-end:alinhamento dos itens no final ou de baixo para cima com as escritas.</li></ul>
+        <section class="container flex-end column">
+            <div class="item">Lorem ipsum  </div>
+            <div class="item">Lorem ipsumLorem ipsumLorem ipsum</div>
+            <div class="item">Alex Camelo s2s</div>
+        </section>
+
+    <h4>BaseLine</h4>
+    <ul><li>Baseline: alinhamento de acordo com com a linha base de tipografia dos items.</li></ul>
+    <section class="container baseLine column">
+        <div class="item">Lorem ipsum  </div>
+            <div class="item">Lorem ipsumLorem ipsumLorem ipsum</div>
+            <div class="item">Alex Camelo s2s</div>
+    </section>
+
+    <ul><li>Alinhamento a central da tela</li></ul>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Dolorib us autem quidem minus quos aut repudiandae id nobis hic sunt consequuntur dolores,
+            asperiores, quasi unde,reprehenderit maxime modi numquam neque nam!</div>
+    </section>
+<body>
+</html>

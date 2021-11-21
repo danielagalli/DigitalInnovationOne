@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex_Flow</title>
+    <style>
+        .flex-conteiner{
+            display: flex;
+            border: 1px solid black;
+            max-width: 500px;
+            margin-bottom:10px;
+            height: 200px;
+        }
+        .default{
+            flex-flow:  /* column */ wrap;
+        }
+        .wrap{
+            flex-flow: row wrap;
+        }
+        .wrap-reverse{
+            flex-flow: row wrap-reverse;
+        }
+        .r-nowrap{
+            flex-flow: row-reverse nowrap;
+        }
+        .r-wrap{
+            flex-flow: row-reverse wrap;
+        }
+        .rr-wrap{
+            flex-flow: wrap-reverse;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Flow</h1>
+    <p>O flex-flow é um atalho para as propriedades flex-direction e flex-wrap. Você não verá
+        muito o seu uso, pois geralmente quando mudamos o flex-direction para column, 
+        mantemos o padrão do flex-wrap que é nowrap. E quando mudamos o flex-wrap para
+        wrap, mantemos o padrão do flex-direction que é row.</p>
+        <h1> Default: Row Nowrap</h1>
+        <p>Sequencia da direita para esquerda</p>
+        <div class="flex-conteiner default">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+        <h1>Wrap</h1>
+
+        <p>Sequenciada da esquerda para direita e quando  ocupa op espaçp definido,
+            acontece a quebra de linha fazendo que os numeros acupem automaticamente 
+        da esquerta para direita. </p>
+            <div class="flex-conteiner wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+            </div>
+            <h1>Wrap Reverse</h1>
+            <p>Com quebra de linha, da esquerda para direita porem
+              quando ocupa o espaço definido, quebra a linha para parte 
+              superior colocando sempre os numeros na sequencia da esquerda para direita. </p>
+            </p>
+            <div class="flex-conteiner wrap-reverse">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+            </div>
+            <h1>Row-reverse nowrap</h1>
+            <p>Sem quebra de linha, e a contagem começa pela direita para 
+                esquerda, e sempre na horizontal.
+            </p>
+            <div class="flex-conteiner r-nowrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+            </div>
+            <h1>Row-reverse wrap</h1>
+            <p>Com quebra de linha, e a contagem começa pela direita para 
+                esquerda,e quando atinge o espaço definido quebra linha para baixo 
+                e sempre posicionando os numeros pela direita para esquerda.</p>
+            <div class="flex-conteiner r-wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+            </div>
+            <h1>Row-reverse wrap-reverse</h1>
+            <p>  Se for acrescentar mais um item sempre vai crescer da esquerta para direita,
+                como esta no exemplo abaixo</p>
+            <div class="flex-conteiner rr-wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+            </div>
+        
+</body>
+</html>

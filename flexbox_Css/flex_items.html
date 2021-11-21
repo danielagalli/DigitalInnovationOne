@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_items/flex-grow</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+            margin-bottom:20px;
+        }
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .flex_grow_0{
+            flex-grow: 0;
+        }
+        .flex_grow_1{
+            flex-grow: 1;
+        }
+        .flex_grow_2{
+            flex-grow: 2;
+        }
+        .flex_grow_3{
+            flex-grow: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flex-Grow</h1>
+    <p>Define a proporcionalidade de crescimento dos itens, respeitando o tamanho de seus conteúdos internos.</p>
+    <p></p>OBS:Não irá funcionar caso tenhamos adicionado justify-content ao nosso flex container.</p>
+
+    <h2>flex_grow: 0</h2>
+    <div class="container">
+        <div class="item flex_grow_0">A</div>
+        <div class="item flex_grow_0">B</div>
+        <div class="item flex_grow_0">C</div>
+        <div class="item flex_grow_0">D</div>
+    </div>
+
+    <h2>flex_grow: 1</h2>
+    <div class="container">
+        <div class="item flex_grow_1">A</div>
+        <div class="item flex_grow_1">B</div>
+        <div class="item flex_grow_1">C</div>
+        <div class="item flex_grow_1">D</div>
+    </div>
+
+    <h2>flex_grow: 2</h2>
+    <div class="container">
+        <div class="item flex_grow_2">A</div>
+        <div class="item flex_grow_2">BBBBB</div>
+        <div class="item flex_grow_2">C</div>
+        <div class="item flex_grow_2">D</div>
+    </div>
+
+    <h2>flex_grow: 3</h2>
+    <div class="container">
+        <div class="item flex_grow_3">A</div>
+        <div class="item flex_grow_3">B</div>
+        <div class="item flex_grow_3">C</div>
+        <div class="item flex_grow_3">D</div>
+    </div>  
+</body>
+</html>
